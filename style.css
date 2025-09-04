@@ -9,7 +9,8 @@
 
 .hero {
   position: relative;
-  height: calc(100dvh + 600px);
+  height: calc(100dvh + 1400px);
+  background-color: rgb(255, 255, 255);
 }
 
 .tunel {
@@ -23,7 +24,7 @@
 .logo {
   position: fixed;
   left: 50.5dvw;
-  top: 59.7dvh;
+  top: 61.7dvh;
   transform: translate(-50%, 0);
   width: auto;
   height: 2dvh;
