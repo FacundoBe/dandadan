@@ -20,14 +20,14 @@ const tl = gsap.timeline({
   },
 })
 
-tl.to(".tunel",{scale:5,y:-300, opacity:0, ease:"power1.in", duration:8})
+tl.to(".tunel",{scale:5,y:"60dvh", opacity:0, ease:"power1.in", duration:8})
 .to('.logo',{
   opacity:1,
   duration:1,
 },"<0.5")
 .to('.logo',{
-  scale:35,
-  y:-100,
+  scale:60,
+  y:"13dvh",
   ease:"power2.in",
   duration:5,
 },"<")
