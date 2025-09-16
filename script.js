@@ -1,5 +1,3 @@
-
-
 gsap.registerPlugin(ScrollTrigger)
 
 // Initialize a new Lenis instance for smooth scrolling
@@ -14,24 +12,76 @@ const tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".hero",
     start: "top top",
-    end: "+=1200",
+    end: "+=2000",
     scrub: 1,
     markers: false,
   },
 })
 
-tl.to(".tunel",{scale:5,y:"60dvh", opacity:0, ease:"power1.in", duration:8})
-.to('.logo',{
-  opacity:1,
-  duration:1,
-},"<0.5")
-.to('.logo',{
-  scale:60,
-  y:"13dvh",
-  ease:"power2.in",
-  duration:5,
-},"<")
-
-
-
-
+tl.to(".tunel", {
+  scale: 5,
+  y: "55dvh",
+  ease: "none",
+  duration: 16,
+})
+  .to(
+    ".momo",
+    { xPercent: 515, yPercent: 45, scale: 4.5, ease: "power1.in", duration: 6 },
+    "<"
+  )
+  .to(
+    ".abuela",
+    { xPercent: 190, yPercent: 25, scale: 3.8, ease: "power1.in", duration: 8 },
+    "<"
+  )
+  .to(
+    ".okarun",
+    {
+      xPercent: -375,
+      yPercent: 40,
+      scale: 3.8,
+      ease: "power1.in",
+      duration: 5,
+    },
+    "<"
+  )
+  .to(
+    ".linda",
+    {
+      xPercent: -350,
+      yPercent: 35,
+      scale: 3.7,
+      ease: "power1.in",
+      duration: 7,
+    },
+    "<"
+  )
+  .to(
+    ".logo",
+    {
+      opacity: 1,
+      duration: 3,
+    },
+    ">-1"
+  )
+  .to(
+    ".logo",
+    {
+      scale: 12,
+      y: "-2dvh",
+      x:"2dvw",
+      ease: "none",
+      duration: 9,
+    },
+    "<"
+  )
+  .to(
+    ".tunel",
+    {
+      opacity: 0,
+      duration: 9,
+      ease:"none"
+    },
+    "<"
+  )
+  

@@ -4,29 +4,33 @@
   box-sizing: border-box;
 }
 
-
-
-
 .hero {
   position: relative;
-  height: calc(100dvh + 1400px);
-  background-color: rgb(255, 255, 255);
+  height: calc(100dvh + 2000px);
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.slide1 {
+  position: fixed;
+  height: 100dvh;
+  width: 100dvw;
+  overflow: hidden;
 }
 
 .tunel {
-  position: fixed;
+  position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
   width: auto;
-  height: 112.5dvh;
+  height: 117dvh;
 }
 
 .logo {
-  position: fixed;
-  left: 47.5dvw;
-  top: 46.7dvh;
+  position: absolute;
+  left: 43.0dvw;
+  top: 48.0dvh;
   width: auto;
-  height: 2dvh;
+  height: 8dvh;
   opacity: 0;
   z-index: 1;
 }
@@ -35,25 +39,29 @@
 .abuela,
 .momo,
 .okarun {
-  position: fixed;
+  position: absolute;
+  left: 50%;
   z-index: 10;
+  height: 80dvh;
+  width: auto;
 }
 
 .linda {
-  left: 15dvw;
-  top: 15dvh;
+  transform: translate(-160%, 0);
+  bottom: -5dvh;
 }
 
 .okarun {
-  left: 25dvw;
-   top: 20dvh;
+  transform: translate(-90%, 0);
+  bottom: 0dvh;
 }
 
-.abuela{
-  right: 26dvw;
+.abuela {
+  bottom: 4dvh;
+  transform: translate(-10%, 0);
 }
 
 .momo {
-  right: 35dvw;
-  top: 21dvh;
+  bottom: 0dvh;
+  transform: translate(-10%, 0);
 }
