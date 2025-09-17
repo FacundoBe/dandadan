@@ -12,7 +12,7 @@ const tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".hero",
     start: "top top",
-    end: "+=2000",
+    end: "+=2500",
     scrub: 1,
     markers: false,
   },
@@ -21,7 +21,7 @@ const tl = gsap.timeline({
 tl.to(".tunel", {
   scale: 5,
   y: "55dvh",
-  ease: "none",
+  ease: "power1.in",
   duration: 16,
 })
   .to(
@@ -60,7 +60,7 @@ tl.to(".tunel", {
     ".logo",
     {
       opacity: 1,
-      duration: 3,
+      duration: 6,
     },
     ">-1"
   )
@@ -69,8 +69,8 @@ tl.to(".tunel", {
     {
       scale: 12,
       y: "-2dvh",
-      x:"2dvw",
-      ease: "none",
+      x:"0dvw",
+      ease: "power1.in",
       duration: 9,
     },
     "<"

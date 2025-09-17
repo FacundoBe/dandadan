@@ -6,7 +6,7 @@
 
 .hero {
   position: relative;
-  height: calc(100dvh + 2000px);
+  height: calc(100dvh + 2500px);
   background-color: rgba(0, 0, 0, 1);
 }
 
@@ -27,8 +27,8 @@
 
 .logo {
   position: absolute;
-  left: 43.0dvw;
-  top: 48.0dvh;
+  left: 44.5dvw;
+  top: 45.0dvh;
   width: auto;
   height: 8dvh;
   opacity: 0;
