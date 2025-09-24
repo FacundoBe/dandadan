@@ -67,7 +67,7 @@ tl.to(".tunel", {
   .to(
     ".logo",
     {
-      scale: 12,
+      scale: 9,
       y: "-2dvh",
       x:"0dvw",
       ease: "power1.in",
