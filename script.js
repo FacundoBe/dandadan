@@ -32,6 +32,7 @@ const tl = gsap.timeline({
     start: "top top",
     end: "+=2500",
     scrub: 1,
+    pin:true,
     markers: false,
   },
 })
@@ -60,7 +61,7 @@ tl.to(".tunel", {
       yPercent: 5,
       scale: 3.8,
       ease: "power1.in",
-      duration: 55,
+      duration: 60,
     },
     "<"
   )
@@ -92,7 +93,7 @@ tl.to(".tunel", {
       opacity: 1,
       duration: 40,
     },
-    "<20"
+    "15"
   )
   .to(
     ".logo",
@@ -115,4 +116,5 @@ tl.to(".tunel", {
     },
     "<"
   )
+
 

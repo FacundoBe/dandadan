@@ -11,7 +11,7 @@
 }
 
 .slide1 {
-  position: fixed;
+  position: relative;
   height: 100dvh;
   width: 100dvw;
   overflow: hidden;
@@ -29,8 +29,9 @@
 
 .logo {
   position: absolute;
-  left: 44.5dvw;
-  top: 45dvh;
+  left: 47.8dvw;
+  top: 47dvh;
+  transform: translate(-50%, -50%);
   width: auto;
   height: 8dvh;
   opacity: 0;
@@ -76,4 +77,10 @@ h1 {
   background-color: beige;
   padding: 10px;
   border-radius: 10px;
+}
+
+.slide2{
+  width: 100%;
+  height: 100dvh;
+  background-color: antiquewhite;
 }
