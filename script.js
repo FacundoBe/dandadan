@@ -18,7 +18,7 @@ const actualizarVisorScroll = () => {
 
   // 3. Actualizar el texto del elemento en pantalla
   visorScroll.textContent = `Scroll Y: ${Math.round(valorScroll)}px   -  ${(
-    (Math.round(valorScroll) / 2500) *
+    (Math.round(valorScroll) / 2000) *
     100
   ).toFixed(1)}%`
 }
@@ -30,7 +30,7 @@ const tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".hero",
     start: "top top",
-    end: "+=2500",
+    end: "+=2000",
     scrub: 1,
     pin:true,
     markers: false,
@@ -102,7 +102,7 @@ tl.to(".tunel", {
       y: "-2dvh",
       x: "0dvw",
       ease: "power1.in",
-      duration: 60,
+      duration: 75,
     },
     "<"
   )
