@@ -15,6 +15,7 @@
   height: 100dvh;
   width: 100dvw;
   overflow: hidden;
+  
 }
 
 .tunel {
@@ -23,12 +24,13 @@
   transform: translate(-50%, 0);
   width: auto;
   height: 117dvh;
+ 
 }
 
 .logo {
   position: absolute;
   left: 44.5dvw;
-  top: 45.0dvh;
+  top: 45dvh;
   width: auto;
   height: 8dvh;
   opacity: 0;
@@ -58,10 +60,20 @@
 
 .abuela {
   bottom: 4dvh;
-  transform: translate(-10%, 0);
+  transform: translate(-7%, 0);
 }
 
 .momo {
   bottom: 0dvh;
   transform: translate(-10%, 0);
+}
+
+h1 {
+  z-index: 1000;
+  position: fixed;
+  left: 3dvw;
+  top: 3dvh;
+  background-color: beige;
+  padding: 10px;
+  border-radius: 10px;
 }
