@@ -6,7 +6,7 @@
 
 .hero {
   position: relative;
-  height: calc(100dvh + 2500px);
+  height: calc(100dvh + 100dvh);
   background-color: rgba(0, 0, 0, 1);
   overflow-x: hidden;
 }
@@ -77,6 +77,43 @@ h1 {
   padding: 10px;
   border-radius: 10px;
 }
+
+.okarun-ani {
+  height: 80%;
+  mask-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(255, 255, 255,1) 5%,
+    rgba(0, 0, 0, 0) 75%
+  );
+  -webkit-mask-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(255, 255, 255,1) 5%,
+    rgba(0, 0, 0, 0) 75%
+  );
+   mask-position: center;
+   opacity: 0;
+
+}
+
+.chars-p1{
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+}
+
+.hero-text {
+  z-index: 1000;
+  position: absolute;
+  bottom: 15vh;
+  left: 60%;
+  color: antiquewhite;
+  transform: translate(-50%,0);
+  font-size: 16.7vh;
+  opacity: 0;
+}
+
 
 .slide2 {
   width: 100%;

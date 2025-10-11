@@ -32,7 +32,7 @@ const tl = gsap.timeline({
     start: "top top",
     end: "+=2000",
     scrub: 1,
-    pin:true,
+    pin: true,
     markers: false,
   },
 })
@@ -98,30 +98,56 @@ tl.to(".tunel", {
   .to(
     ".logo",
     {
-      scale: 7,
+      scale: 10,
       y: "-2dvh",
       x: "0dvw",
       ease: "power1.in",
-      duration: 75,
+      duration: 85,
     },
     "<"
   )
   .to(
     ".tunel",
     {
-
-      opacity:0,
+      opacity: 0,
       duration: 60,
       ease: "none",
     },
     "<"
   )
-    .to(
+  .to(
     ".logo",
     {
       opacity: 0,
-      duration: 20, 
-    },"80"
+      duration: 20,
+    },
+    "80"
   )
+  .to(
+    ".okarun-ani",
+    {
+      opacity: 1,
+      y:25,
+      x:40,
+      duration: 20,
+      ease: "power1.in",
+    },
+    "<"
+  )
+  .to(
+    ".hero-text",
+    {
+      opacity:1,
+      duration: 30,
+      ease:"none",
 
+    },
+    "<5"
+  )
+   .to(
+    ".okarun-ani",
+    { duration: 25,
+    },
+    ">"
+  )
 
